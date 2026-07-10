@@ -1,0 +1,13 @@
+aiogram==3.28.2
+Telethon==1.43.2
+
+open_clip_torch==2.26.1
+torch==2.5.1
+torchvision==0.20.1
+
+faiss-cpu==1.14.2
+numpy==2.4.6
+Pillow==12.2.0
+ImageHash==4.3.2
+
+tqdm==4.68.1

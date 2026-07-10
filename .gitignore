@@ -23,6 +23,17 @@ backup/
 *.log
 dmesg.log
 
+.idea/
+.vscode/
+
+*.swp
+*.bak
+*.tmp
+
+.env
+.env.*
+!.env.example
+
 tmp/
 
 *.pyc
