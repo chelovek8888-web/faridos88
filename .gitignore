@@ -1,0 +1,28 @@
+venv/
+__pycache__/
+
+*.session
+*.session-journal
+.env
+
+index.faiss
+index.pkl
+meta.json
+progress*.json
+
+*.tar.gz
+*.log
+
+# backup files
+backup/
+
+# archives
+*.tar.gz
+
+# logs
+*.log
+dmesg.log
+
+tmp/
+
+*.pyc
