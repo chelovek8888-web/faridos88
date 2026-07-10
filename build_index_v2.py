@@ -11,9 +11,10 @@ import open_clip
 
 from channels import CHANNELS
 
+import os
 
-API_ID = 37796988
-API_HASH = "c39ecb6e2931af61e8b2b2397148e1f3"
+API_ID = int(os.getenv("API_ID"))
+API_HASH = os.getenv("API_HASH")
 SESSION = "session.session"
 
 INDEX_FILE = "index.pkl"
