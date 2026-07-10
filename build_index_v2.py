@@ -3,6 +3,10 @@ import json
 import pickle
 import asyncio
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 from PIL import Image
 from telethon import TelegramClient
 
@@ -11,7 +15,6 @@ import open_clip
 
 from channels import CHANNELS
 
-import os
 
 API_ID = int(os.getenv("API_ID"))
 API_HASH = os.getenv("API_HASH")
