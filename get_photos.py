@@ -1,8 +1,12 @@
 from telethon import TelegramClient
 import asyncio
+from dotenv import load_dotenv
+import os
 
-API_ID = 37796988
-API_HASH = 'c39ecb6e2931af61e8b2b2397148e1f3'
+load_dotenv()
+
+API_ID = int(os.getenv("API_ID"))
+API_HASH = os.getenv("API_HASH")
 SESSION_PATH = 'session.session'  # Путь к твоему файлу сессии
 
 channel_username = 'Safrano_opt'  # Введи юзернейм канала без @
