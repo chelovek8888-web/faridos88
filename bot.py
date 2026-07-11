@@ -2,12 +2,16 @@ import os
 import asyncio
 import logging
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import Command
 
 from search import search_similar
 
-API_TOKEN = "8715677301:AAERE6JBmoehO3Kyb9KdznS8okFFQznQnLs"
+API_TOKEN = os.getenv("BOT_TOKEN")
 
 logging.basicConfig(
     level=logging.INFO,

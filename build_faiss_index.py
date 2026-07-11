@@ -7,9 +7,13 @@ from PIL import Image
 from telethon import TelegramClient
 import open_clip
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 # ---------------- CONFIG ----------------
-API_ID = 37796988
-API_HASH = "c39ecb6e2931af61e8b2b2397148e1f3"
+API_ID = int(os.getenv("API_ID"))
+API_HASH = os.getenv("API_HASH")
 CHANNEL = "Safrano_opt"
 
 LIMIT = 300  # тестовый лимит
